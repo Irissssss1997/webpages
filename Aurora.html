@@ -196,26 +196,24 @@
         imgs[2]="https://resource.bcgame-face2face.haorenao.cn/slide03.jpg";
         imgs[3]="https://resource.bcgame-face2face.haorenao.cn/slide01.jpg";
 
-        var thisimg=0;
+        var a=0;
         function initLinks(){
             document.getElementById("last").onclick=goLast;
             document.getElementById("next").onclick=goNext;
         }
         function goLast(){
-            if(thisimg==0){
-                thisimg=imgs.length;
+            if(a==0){
+                a=imgs.length;
             }
-            thisimg--;
-            document.getElementById("img-1st").src=imgs[thisimg];
-            return false;
+            a--;
+            document.getElementById("img-1st").src=imgs[a];
         }
         function goNext(){
-            thisimg++;
-            if(thisimg==imgs.length){
-                thisimg=0;
+            a++;
+            if(a==imgs.length){
+                a=0;
             }
-            document.getElementById("img-1st").src=imgs[thisimg];
-            return false
+            document.getElementById("img-1st").src=imgs[a];
         }
     </script>
 </body>
