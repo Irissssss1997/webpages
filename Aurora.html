@@ -8,24 +8,44 @@
             padding:0;
             margin:0;
         }
-        .banner{
-            width: 100%;
+        #img-1st{
+            width:100%;
             height:550px;
-            background-image:url('https://resource.bcgame-face2face.haorenao.cn/slide01.jpg');
             opacity:0.9;
         }
+        .banner-word{
+            position: absolute;
+            top:180px;
+            right:440px;      
+        }
         .banner-word1,.banner-word2{
-            color:rgb(212, 209, 209);
+            color:white;
             font-family: 'Courier New', Courier, monospace;
             font-size:26px;
             letter-spacing: 0.2em;
             text-align: center;
         }
-        .banner-word1{
-            padding-top:200px;
+        #last{
+            position:relative;
+            bottom:350px;
+            left:30px;
         }
-        .banner-word2{
-            padding-top:2px;
+        #next{
+            position:relative;
+            bottom:350px;
+            left:1200px;
+        }
+        .banner input{
+            padding:20px;
+            background-color:rgba(0, 0, 0, 0.404);
+            color:rgba(255, 255, 255, 0.532);
+            border:none;
+            font-size:30px;
+            
+        }
+        .banner input:hover{
+            background-color: rgba(0, 0, 0, 0.767);
+            color:rgba(255, 255, 255, 0.781);
         }
         hr{
             color:rgb(182, 181, 181);
@@ -116,9 +136,14 @@
 <body>
 
     <div class="banner">
-        <p class="banner-word1">the Aurora of the World</p>
-        <hr/>
-        <p class="banner-word2">you can see details</p>
+        <img id="img-1st" src="https://resource.bcgame-face2face.haorenao.cn/slide01.jpg">
+        <div class="banner-word">
+            <p class="banner-word1">the Aurora of the World</p>
+            <hr/>
+            <p class="banner-word2">you can see details</p>
+        </div>
+        <input type="button" id="last" value="<">
+        <input type="button" id="next" value=">">
     </div>
 
     <div id="part_2">
@@ -146,7 +171,7 @@
         <div class="p4-word">
             <p>Nam vel ante sit amet libero scelerisque facilisis eleifend vitae urna</p>
             <hr/>
-            <h1 style="font-weight:100;color:#black;">Morbi maximus justo</h1>
+            <h1 style="font-weight:100;">Morbi maximus justo</h1>
         </div>
         <div class="p4-img">
             <div class="p4-img-1">
@@ -162,5 +187,34 @@
     <div class="part_5">
         <p>©untitled.All rights reserved.</p>
     </div>
+    <script type="text/javascript">
+        window.onload=initLinks;
+
+        var imgs=new Array(4);
+        imgs[0]="https://resource.bcgame-face2face.haorenao.cn/slide04.jpg";
+        imgs[1]="https://resource.bcgame-face2face.haorenao.cn/slide05.jpg";
+        imgs[2]="https://resource.bcgame-face2face.haorenao.cn/slide03.jpg";
+        imgs[3]="https://resource.bcgame-face2face.haorenao.cn/slide01.jpg";
+
+        var a=0;
+        function initLinks(){
+            document.getElementById("last").onclick=goLast;
+            document.getElementById("next").onclick=goNext;
+        }
+        function goLast(){
+            if(a==0){
+                a=imgs.length;
+            }
+            a--;
+            document.getElementById("img-1st").src=imgs[a];
+        }
+        function goNext(){
+            a++;
+            if(a==imgs.length){
+                a=0;
+            }
+            document.getElementById("img-1st").src=imgs[a];
+        }
+    </script>
 </body>
 </html>
