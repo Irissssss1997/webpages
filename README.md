@@ -5,4 +5,4 @@
 
 2.网页布局demo1 https://irissssss1997.github.io/webpages/demo1.html   css网页布局
 
-3.仿muji静态网页 https://irissssss1997.github.io/webpages/muji.html   
+3.仿muji静态网页 https://irissssss1997.github.io/webpages/muji/muji.html   
