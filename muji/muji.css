@@ -1,0 +1,230 @@
+body{
+    color:#333;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 10.6px;
+    position: relative;
+    margin: 0;
+}
+img{
+    max-width: 100%;
+}
+ul{
+    list-style: none;
+    padding: 0;
+}
+a{
+    text-decoration: none;
+    color: #666;
+}
+
+#globalHeader{
+    height: 70px;
+    width: 100%;
+}
+#globalHeader .headerWrap{
+    width: 90%;
+    margin: 0 auto;
+    position: relative;
+    max-width: 1024px;
+}
+#siteName{
+    top: 0;
+    left: 0;
+    margin: 0;
+    position: absolute;
+    width: 130px;
+}
+#siteName a{
+    padding: 15px 0;
+    display: block;
+    line-height: 1;
+}
+#globalHeader .wrapper ul{
+    padding-left: 15%;
+    margin: 0;
+}
+#globalHeader .wrapper li{
+    float: left;
+    font-size: 13px;
+    padding: 28px 10px;
+    line-height: 1;
+}
+#hGlobalNav a:hover{
+    opacity: 0.7;
+}
+#main section{
+    width: 100%;
+    margin-bottom: 40px;
+}
+.wrap{
+    width: 90%;
+    max-width: 1024px;
+    margin: 0 auto;
+}
+#mainCampaign .mainPanel,#mainCampaign .mainPanel img{
+    width: 100%;
+    display: block;
+    max-width: 1024px;
+    height: auto;
+    position: relative;
+}
+#main ul{
+    margin: 0 auto;
+    display: flex;
+    flex-wrap: wrap;
+    margin-bottom: 15px;
+}
+#mainCampaign .fourPanels li{
+    width: 23.5%;
+    max-width: 245px;
+    height: auto;
+}
+#mainCampaign ul li{
+    margin-bottom: 20px;
+    margin: 20px 2% 0 0;
+}
+#mainCampaign ul li:last-child{
+    margin-right:0;
+}
+#mainCampaign li a{
+    display: block;
+    padding: 0;
+    min-height: 60px;
+    position: relative;
+}
+#mainCampaign .title{
+    position: absolute;
+    bottom: 10px;
+    left: 10px;
+    text-shadow: 1px 1px 3px rgba(0,0,0,.5);
+    font-weight: bold;
+    width: 90%;
+    color: #fff;
+}
+#mainCampaign .more{
+    margin-top: 0;
+}
+.more{
+    font-size: 14px;
+    position: relative;
+    padding-right: 20px;
+    text-align: right;
+    width: 90%;
+    max-width: 1024px;
+    margin: -38px auto 1em;
+}
+.more a::after{
+    display: block;
+    position: absolute;
+    top: 50%;
+    right: 10px;
+    width: 7px;
+    height: 7px;
+    margin: -5px -5px 0 0;
+    border-top: solid 1px #7f7f7f;
+    border-right: solid 1px #7f7f7f;
+    transform: rotate(45deg);
+    content: "";    
+}
+#main h1{
+    font-size: 18px;
+    margin: 0 auto 1em;
+    line-height: 1;
+    color: #333;
+    width: 90%;
+    max-width: 1024px;
+}
+#main #product ul{
+    border-bottom: 1px solid #eee;
+    padding-bottom: 10px;
+}
+#main #product li{
+    margin: 0 2% 5px 0;
+    width: 15%;
+    box-sizing: border-box;
+    font-size: 12px;
+    padding-right: 2px;
+    background-size: auto 40px;
+    background-repeat: no-repeat;
+    background-position: 8px center;
+}
+#main #product li:nth-child(6n){
+    margin-right: 0;
+}
+#main #product li a{
+    display: block;
+    padding: 0 2px 0 55px;
+    position: relative;
+    min-height: 60px;
+}
+#main #product li span{
+    position: absolute;
+    top: 40%;
+}
+#lab li{
+    width: 32%;
+    height: auto;
+    margin-right: 2%;
+    position: relative;
+    box-sizing: border-box;
+}
+#lab li a{
+    display: block;
+    padding: 0;
+    min-height: 60px;
+    position: relative;
+}
+#lab li:last-child{
+    margin-right: 0;
+}
+#lab li .title{
+    position: absolute;
+    bottom: 10px;
+    left: 10px;
+    text-shadow: 1px 1px 3px rgba(0,0,0,.5);
+    font-weight: bold;
+    width: 90%;
+    color: #fff;
+}
+#misc{
+    padding: 15px 0;
+    background: #ebebeb;
+    display: block;
+}
+#misc .content{
+    width: 90%;
+    margin: 0 auto;
+    max-width: 1024px;
+    display: block;
+}
+#misc ul{
+    float: left;
+    margin: 0;
+    padding: 0;
+    list-style: none;
+}
+#misc li{
+    float: left;
+    margin-right: 10px;
+}
+#misc a{
+    display: block;
+}
+#misc a img{
+    height: 25px;
+    width: auto;
+    vertical-align: middle;
+}
+#misc .passport{
+    float: right;
+}
+#misc .passport a img{
+    height: 25px;
+    padding-left: 10px;
+    width: auto;
+}
+#misc::after,#misc ul::after{
+    content: "";
+    display: block;
+    clear: both;
+}
